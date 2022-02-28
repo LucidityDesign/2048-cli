@@ -13,6 +13,6 @@ Basic implementation of 2048 by [Gabriele Cirulli](https://github.com/gabrieleci
 - [ ] Improve documentation
 - [ ] Add linting
 - [ ] Color tiles
-- [ ] Add win / loose message
+- [ ] Add win / lose message
 - [ ] Clean up terminal.ts
 - [ ] Check types
