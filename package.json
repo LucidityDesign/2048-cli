@@ -6,8 +6,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "ts-node ./index.ts'",
-    "start": "ts-node ./terminal.ts'",
+    "dev": "ts-node ./index.ts",
+    "start": "ts-node ./terminal.ts",
     "test": "jest --watchAll",
     "test-debug": "node --inspect node_modules/.bin/jest --runInBand --watchAll"
   },
