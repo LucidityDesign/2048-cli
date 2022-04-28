@@ -1,6 +1,7 @@
 import { stdin } from 'process';
 import chalk from 'chalk';
 import Game from './';
+import { getColor } from './colors';
 
 stdin.setRawMode(true);
 stdin.resume();
@@ -11,9 +12,9 @@ type ChalkColor = [red: number, green: number, blue: number];
 function logGame() {
   const printArr = Game.field.map((row) => {
     // TODO fix number padding
-    // TODO set better colors
     return row.map((cell) => {
-      return chalk.bgRgb(...([cell, 0, 0] as ChalkColor)).bold(`   ${cell}`.slice(-4))
+      const colors = getColor(cell);
+      return chalk.hex(colors.color).bgHex(colors.background).bold(`   ${cell}`.slice(-4))
     });
   });
 
