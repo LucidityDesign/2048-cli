@@ -11,13 +11,12 @@ class Game {
   public testMode: boolean = false;
   private _score: number = 0;
 
-  private get score() {
+  public get score() {
     return this._score;
   }
 
   private set score(newValue: number) {
     this._score = newValue;
-    console.log({ score: this._score });
   }
 
   constructor () {

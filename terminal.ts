@@ -17,8 +17,9 @@ function logGame() {
     });
   });
 
-  console.log(printArr.join('\n'));
-  console.log("_______");
+  process.stdout.write('\x1b[H\x1b[2J')
+  process.stdout.write(`${Game.score} \n`);
+  process.stdout.write(printArr.join('\n'));
 }
 
 logGame();
