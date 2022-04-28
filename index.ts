@@ -3,7 +3,6 @@ type FieldIndex = {
   cell: number,
 };
 
-const START_VALUES = [2, 4];
 const GAME_SIZE = 4;
 
 class Game {
@@ -39,7 +38,7 @@ class Game {
     if (this.testMode) {
       return;
     }
-    const randomValue = START_VALUES[Math.round(Math.random())];
+    const randomValue = Math.random() < 0.9 ? 2 : 4;
     const index = this.getRandomIndex();
 
     this.field[index.row][index.cell] = randomValue;
