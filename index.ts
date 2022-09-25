@@ -49,7 +49,6 @@ class Game {
    * @returns {FieldIndex}
    */
   private getRandomIndex(): FieldIndex {
-    debugger;
     const emptyIndeces = this.field
       .flat()
       .map((a, i) => a === 0 ? i : -1)
